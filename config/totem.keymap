@@ -51,10 +51,10 @@
                 sym_layer {
                     label= "SYM";
                     bindings = <
-                &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp ASTRK   &kp MINUS   &kp SEMI
-                &kp GRAVE   &kp LBRC    &kp RPAR    &kp LBKT    &kp LT          &kp GT      &kp RBKT    &kp RPAR    &kp RBRC    &kp COLON
-    &trans      &kp TILDE   &kp SLASH   &kp EQUAL   &kp PIPE    &kp BSLH        &kp UNDER   &kp PLUS    &kp APOS    &kp DQT     &kp QMARK   &trans      
-                                        &trans      &trans      &trans          &trans      &trans      &trans      
+                &kp EXCL        &kp AT          &kp HASH        &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp ASTRK       &kp MINUS       &kp SEMI
+                &mt LCTRL GRAVE &mt LALT LBRC   &mt LGUI RPAR   &kp LBKT    &kp LT          &kp GT      &mt RBKT    &mt RGUI RPAR   &mt RALT RBRC   &mt RCTRL COLON
+    &trans      &kp TILDE       &kp SLASH       &kp EQUAL       &kp PIPE    &kp BSLH        &kp UNDER   &kp PLUS    &kp APOS        &kp DQT         &kp QMARK   &trans      
+                                                    &trans      &trans      &trans          &trans      &trans      &trans      
                     >;
                 };
 
@@ -62,10 +62,10 @@
                 num_layer {
                     label= "NUM";
                     bindings = <
-                &kp N1      &kp N2      &kp N3      &kp N4        &kp N5          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0       
-                &kp LA(U)   &kp LA(I)   &trans      &kp LA(GRAVE) &kp LA(E)       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans 
-    &trans      &kp LA(N)   &kp SLASH   &kp LA(C)   &trans        &trans          &kp MINUS   &kp PLUS    &kp LT      &kp GT      &trans   &trans         
-                                        &trans      &trans        &trans          &trans      &trans      &trans      
+                &kp N1          &kp N2         &kp N3      &kp N4        &kp N5          &kp N6      &kp N7      &kp N8      &kp N9         &kp N0       
+                &mt LCTRL LA(U) &mt LALT LA(I) &kp LGUI    &kp LA(GRAVE) &kp LA(E)       &kp LEFT    &kp DOWN    &mt RGUI UP &mt RALT RIGHT &RCTRL 
+    &trans      &kp LA(N)       &kp SLASH      &kp LA(C)   &trans        &trans          &kp MINUS   &kp PLUS    &kp LT      &kp GT         &trans   &trans         
+                                               &trans      &trans        &trans          &trans      &trans      &trans      
                     >;
                 };
 
@@ -74,9 +74,9 @@
                 function_layer {
                     label= "FN";
                     bindings = <
-                &kp F1      &kp F2      &kp F3      &kp F4      &kp F5          &kp F6      &kp F7       &kp F8       &kp F9      &kp F10
-                &trans      &trans      &trans      &trans      &trans          &trans      &kp C_VOL_UP &kp C_BRI_UP &kp F11     &kp DEL  
-    &trans      &trans      &trans      &kp LG(X)   &kp LG(C)   &kp LG(V)       &trans      &kp C_VOL_DN &kp C_BRI_DN &kp F12     &trans      &trans         
+                &kp F1      &kp F2      &kp F3      &kp F4      &kp F5          &kp F6      &kp F7       &kp F8            &kp F9       &kp F10
+                &kp LCTRL   &kp LALT    &kp LGUI    &trans      &trans          &trans      &kp C_VOL_UP &mp RGUI C_BRI_UP &mt RALT F11 &mt RCTRL DEL  
+    &trans      &trans      &trans      &kp LG(X)   &kp LG(C)   &kp LG(V)       &trans      &kp C_VOL_DN &kp C_BRI_DN      &kp F12      &trans        &trans         
                                         &trans      &trans      &trans          &trans      &trans       &trans      
                     >;
                 };
