@@ -32,7 +32,7 @@
 };
  
 &sl {
-    release-after-ms: 1000
+    release-after-ms: 1000;
 }
 
 / {
