@@ -17,11 +17,12 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
-#define NAV  1
-#define SYM  2
-#define ADJ  3
-#define TVP1 4
-#define TVP2 5
+#define SYM  1
+#define NUM  2
+#define FN   3
+
+#define MEH LC(LA(LGUI))
+#define HYPR LC(LA(LS(LGUI)))
 
 &mt {
   quick-tap-ms = <100>;
@@ -56,9 +57,9 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
-                &mt LCTRL A &mt LALT S  &mt LGUI D  &kp F       &kp G           &kp H       &kp J       &mt RGUI K  &mt RALT L  &mt RCTRL BSPC
+                &mt LCTRL A &mt LALT S  &mt LGUI D  &mt MEH F   &mt HYPR G      &kp H       &kp J       &mt RGUI K  &mt RALT L  &mt RCTRL BSPC
     &kp TAB     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp TAB    &kp BSLH
-                                        &lt 3 ESC   &kp LSHIFT  &sl 1           &sl 2       &lt 3 SPACE &kp RET
+                                        &lt FN ESC  &kp LSHIFT  &sl SYM         &sl NUM     &lt FN SPACE&kp RET
                         >;
                 };
 
