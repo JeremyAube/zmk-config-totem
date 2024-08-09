@@ -108,10 +108,10 @@ label= "NUM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp N1      &kp N2      &kp N3      &kp n4      &kp n5          &kp n6      &kp n7      &kp n8      &kp n9      &kp n0       
-                &kp LA(U)   &kp LA(I)   &trans      &LA(GRAVE)  &LA(E)          &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans 
-    &trans      &kp LA(N)   &kp SLASH   &kp LA(C)   &trans      &trans          &kp MINUS   &kp PLUS    &kp LT      &kp GT      &kp trans   &trans         
-                                        &trans      &trans      &trans          &trans      &trans      &trans      
+                &kp N1      &kp N2      &kp N3      &kp n4        &kp n5          &kp n6      &kp n7      &kp n8      &kp n9      &kp n0       
+                &kp LA(U)   &kp LA(I)   &trans      &kp LA(GRAVE) &kp LA(E)       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans 
+    &trans      &kp LA(N)   &kp SLASH   &kp LA(C)   &trans        &trans          &kp MINUS   &kp PLUS    &kp LT      &kp GT      &kp trans   &trans         
+                                        &trans      &trans        &trans          &trans      &trans      &trans      
                         >;
                 };
 
@@ -136,7 +136,7 @@ label= "FN"                               ;
 
                 &kp F1      &kp F2      &kp F3      &kp F4      &kp F5          &kp F6      &kp F7       &kp F8       &kp F9      &kp F10
                 &trans      &trans      &trans      &trans      &trans          &trans      &kp C_VOL_UP &kp C_BRI_UP &kp F11     &kp DEL  
-    &trans      &trans      &trans      &LG(X)      &LG(C)      &LG(V)          &trans      &kp C_VOL_DN &kp C_BRI_DN &kp F12     &trans      &trans         
+    &trans      &trans      &trans      &kp LG(X)   &kp LG(C)   &kp LG(V)       &trans      &kp C_VOL_DN &kp C_BRI_DN &kp F12     &trans      &trans         
                                         &trans      &trans      &trans          &trans      &trans       &trans      
                         >;
                 };
