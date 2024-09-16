@@ -12,7 +12,7 @@
 
 &mt {
   flavor = "tap-preferred";
-  tapping-term-ms = <170>;
+  tapping-term-ms = <200>;
 };
  
 &sl {
@@ -21,6 +21,8 @@
 
 #define MEH LC(LA(LSHIFT))
 #define HYPR LC(LA(LG(LSHIFT)))
+
+#define ARC_CPY LS(LG(C))
 
 / {
         keymap {
@@ -66,7 +68,7 @@
                     bindings = <
                   &kp F1      &kp F2      &kp F3      &kp F4      &kp F5          &kp F6      &kp F7       &kp F8            &kp F9       &kp F10
                   &kp LCTRL   &kp LALT    &kp LGUI    &trans      &trans          &trans      &kp C_VOL_UP &mt RGUI C_BRI_UP &mt RALT F11 &mt RCTRL DEL  
-    &kp LS(LC(C)) &trans      &trans      &kp LG(X)   &kp LG(C)   &kp LG(V)       &trans      &kp C_VOL_DN &kp C_BRI_DN      &kp F12      &trans        &trans         
+    &kp ARC_CPY   &trans      &trans      &kp LG(X)   &kp LG(C)   &kp LG(V)       &trans      &kp C_VOL_DN &kp C_BRI_DN      &kp F12      &trans        &trans         
                                           &trans      &trans      &trans          &trans      &trans       &trans      
                     >;
                 };
